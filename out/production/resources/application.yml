@@ -1,0 +1,42 @@
+myapp:
+  Stag:
+    to: sunil@example.com
+    host: mail.example.com
+    port: 250
+    cc:
+    - mike@example.com
+    - david@example.com
+    bcc:
+    - sumit@example.com
+    - admin@example.com
+    credential:
+      user-name: sunil1234
+      password: xyz@1234
+
+  dev:
+    to: test@example.com
+    host: test.example.com
+    port: 25022
+    cc:
+    - test@example.com
+    - davitestd@example.com
+    bcc:
+    - testsumit@example.com
+    - testadmin@example.com
+    credential:
+      user-name: testsunil1234
+      password: testxyz@1234
+
+    prod:
+      to: prod@example.com
+      host: prod.example.com
+      port: 23225022
+      cc:
+      - prod@example.com
+      - prod@example.com
+      bcc:
+      - prodsumit@example.com
+      - tprodadmin@example.com
+      credential:
+        user-name: testsunil1234
+        password: testxyz@1234
