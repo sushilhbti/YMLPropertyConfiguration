@@ -1,6 +1,9 @@
 package demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.Valid;
@@ -9,7 +12,11 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.List;
 
-@ConfigurationProperties(prefix="myapp.dev")
+@Configuration
+@ConfigurationProperties(prefix="myapp.prod")
+@EnableConfigurationProperties
+@Component
+
 @Validated
 
 public class MailProperties {
